@@ -1,13 +1,8 @@
 Board.Router.map(function() {
-//   this.resource('posts', {path: "/"});
-//   this.resource('about');
-//   this.resource('contact', function() {
-//     this.resource('phone');
-//     this.resource('email');
-//   });
-//   this.resource('recent-comments');
-//   this.resource('post', {path: 'posts/:post_id'}, function() {
-//     this.resource('new-comment');
-//   });
-//   this.resource('new-post');
-// });
+  this.resource('questions', {path: "/"});
+  this.resource('new-question');
+  // this.resource('recent-answers');
+  // this.resource('question', {path: 'questions/:question_id'}, function() {
+  //   this.resource('new-answer');
+  // });
+});

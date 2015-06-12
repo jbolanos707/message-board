@@ -1,9 +1,5 @@
-Blogger.PostsRoute = Ember.Route.extend({
-  // controllerName: 'posts',
-  // renderTemplate: function() {
-  //   this.render('posts');
-  // },
+Board.QuestionsRoute = Ember.Route.extend({
   model: function() {
-    return this.store.find('post');
+    return this.store.find('question');
   }
 });

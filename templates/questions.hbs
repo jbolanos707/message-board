@@ -1,13 +1,17 @@
+<h1>Puppy Parent</h1>
 
-  <h1>Dracula's Blog</h1>
   <ul>
     {{#each}}
-      <li>{{#link-to 'post' this.id}}{{title}}{{/link-to}}</li>
+    <li>
+    {{question}}
+      <!-- <li>{{#link-to 'question' this.id}}{{question}}{{/link-to}} -->
+      <font size="1"><em>{{author}}</em></font>
+      </li>
     {{/each}}
   </ul>
 
-  <p><a href='#' {{action 'sortByTitle'}}>Sort by title</a></p>
+  <!-- <p><a href='#' {{action 'sortByTitle'}}>Sort by title</a></p> -->
 
 <p>
-  {{#link-to 'new-post' classNames="btn btn-primary"}}New scary post{{/link-to}}
+  {{#link-to 'new-question' classNames="btn btn-primary"}}Post New Thread{{/link-to}}
 </p>

@@ -1,5 +1,5 @@
-Blogger.RecentCommentsRoute = Ember.Route.extend({
+Board.RecentAnswersRoute = Ember.Route.extend({
   model: function() {
-    return this.store.find('comment');
+    return this.store.find('answer');
   }
 });

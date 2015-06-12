@@ -1,15 +1,17 @@
-<h1>New Post</h1>
-
 <form>
   <div class="form-group">
-    <label for="title">Title</label>
-    {{input id="title" class="form-control" value=title}}
+    <label for="author">Name</label>
+    {{input id="author" class="form-control" value=author}}
   </div>
   <div class="form-group">
-    <label for="body">Body</label>
-    {{textarea id="body" class="form-control" rows="15" value=body}}
+    <label for="question">Question</label>
+    {{input id="question" class="form-control" value=question}}
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    {{textarea id="description" class="form-control" rows="15" value=description}}
   </div>
 
-  <button class="btn btn-primary" {{action 'save'}}>Save</button>
+  <button class="btn btn-primary" {{action 'save'}}>Submit</button>
 
 </form>
