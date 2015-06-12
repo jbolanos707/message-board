@@ -9,9 +9,9 @@ Board.QuestionController = Ember.ObjectController.extend({
       this.get('model').save();    //this line will allow the edited post to be saved and show edited version when page refreshes
     },
     delete: function() {
-      if (confirm('Are you sure?')) {
+      if (confirm('Are you sure you would like to delete this thread?')) {
         this.get('model').destroyRecord();
-        this.transitionToRoute('posts');
+        this.transitionToRoute('questions');
       }
     }
   }

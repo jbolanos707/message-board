@@ -1,14 +1,6 @@
-<p class="lead">{{question}}</p>
-<p><font size="1"><em>{{author}}</em></font></p>
-<br>
-<p>{{description}}</p>
+{{#if isEditing}}
 
-<button class="btn btn-primary" {{action 'edit'}}>Edit</button>
-<button class="btn btn-primary" {{action 'delete'}}>Delete</button>
-
-<!-- {{#if isEditing}} -->
-
-  <!-- <form>
+  <form>
     <div class="form-group">
       <label for="author">Name</label>
       {{input id="author" class="form-control" value=author}}
@@ -19,25 +11,27 @@
     </div>
     <div class="form-group">
       <label for="description">Description</label>
-      {{textarea id="body" class="form-control" rows="15" value=body}}
+      {{textarea id="description" class="form-control" rows="15" value=description}}
     </div>
 
     <button class="btn btn-primary" {{action 'save'}}>Save</button>
 
   </form>
 
-  {{else}} -->
+  {{else}}
 
-  <!-- <p>{{question}}</p>
-  <font size="1"><em>{{author}}</em></font> -->
+  <p class="lead">{{question}}</p>
+  <p><font size="1"><em>{{author}}</em></font></p>
+  <br>
+  <p>{{description}}</p>
 
-  <!-- <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
-  <button class="btn btn-primary" {{action 'delete'}}>Delete</button> -->
+  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+  <button class="btn btn-primary" {{action 'delete'}}>Delete</button>
 
-  <!-- {{/if}}
+{{/if}}
 
 
-  <h2>Comments</h2>
+  <!-- <h2>Comments</h2>
 
   {{#each comments}}
     <p>{{text}}</p>
