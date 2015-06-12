@@ -1,0 +1,38 @@
+
+<h1>{{title}}</h1>
+
+{{#if isEditing}}
+
+  <form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      {{input id="title" class="form-control" value=title}}
+    </div>
+    <div class="form-group">
+      <label for="body">Body</label>
+      {{textarea id="body" class="form-control" rows="15" value=body}}
+    </div>
+
+    <button class="btn btn-primary" {{action 'save'}}>Save</button>
+
+  </form>
+
+  {{else}}
+
+  <p>{{body}}</p>
+
+  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+  <button class="btn btn-primary" {{action 'delete'}}>Delete</button>
+
+  {{/if}}
+
+
+  <h2>Comments</h2>
+
+  {{#each comments}}
+    <p>{{text}}</p>
+  {{/each}}
+
+<p>{{#link-to 'new-comment' this.id class="btn btn-success"}}New Comment{{/link-to}}</p>
+
+{{outlet}}

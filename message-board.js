@@ -1,0 +1,1 @@
+Board = Ember.Application.create();
