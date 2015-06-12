@@ -2,9 +2,7 @@
 
   <ul>
     {{#each}}
-    <li>
-    {{question}}
-      <!-- <li>{{#link-to 'question' this.id}}{{question}}{{/link-to}} -->
+      <li>{{#link-to 'question' this.id}}{{question}}{{/link-to}}
       <font size="1"><em>{{author}}</em></font>
       </li>
     {{/each}}
