@@ -1,10 +1,8 @@
-<h2>New Comment</h2>
-
 <form>
   <div class="form-group">
-    <label for="text">Your Thoughts:</label>
-    {{textarea value=text id="text" class="form-control" rows="5"}}
+    <label for="text">Contribute to this thread</label>
+    {{textarea value=text id="text" class="form-control" rows="15"}}
   </div>
 
-  <button class="btn btn-primary" {{action 'save'}}>Add your comment</button>
+  <button class="btn btn-primary" {{action 'save'}}>Submit</button>
 </form>
