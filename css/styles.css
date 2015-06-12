@@ -1,0 +1,18 @@
+body {
+  background: #ffeead;
+}
+
+.jumbotron {
+  background: #96ceb4;
+  color: white;
+}
+
+.navbar {
+  background: #ff6f69;
+}
+
+.btn {
+  background: #ff6f69;
+  color: white;
+  border-color: #ff6f69;
+}

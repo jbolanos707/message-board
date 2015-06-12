@@ -3,7 +3,8 @@ Board.NewAnswerController = Ember.Controller.extend({
   actions: {
     save: function() {
       var answer = this.store.createRecord('answer', {
-          text: this.get('text')
+          name: this.get('name'),
+          text: this.get('text'),
       });
       answer.save();
 
@@ -11,6 +12,8 @@ Board.NewAnswerController = Ember.Controller.extend({
       question.get('answers').pushObject(answer);
       question.save();
 
+      this.set('name', '');
+      this.set('text', '');
       this.transitionToRoute('question', question.id);
     }
   }

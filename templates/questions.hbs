@@ -1,15 +1,47 @@
-<h1>Puppy Parent</h1>
+<div class="jumbotron">
+  <h1>Puppy Love</h1>
+  <p>Got a new, young, furry love in your life? This is the place for you to ask all of your questions-big or small! Just remember that you are receiving advice from other dog owners and lovers... not professionals. If you have a major problem, always seek the advice of a vet or behaviorist! Most important is to remember to have fun with your new fur baby.</p>
+  <p>{{#link-to 'new-question' classNames="btn btn-primary newTopic"}}Start A New Topic{{/link-to}}</p>
+</div>
 
-  <ul>
-    {{#each}}
-      <li>{{#link-to 'question' this.id}}{{question}}{{/link-to}}
-      <font size="1"><em>{{author}}</em></font>
-      </li>
-    {{/each}}
-  </ul>
+<div class="row">
+  <div class="col-md-6">
+    <p class="lead">Trending Topics</p>
+    <ul>
+      {{#each}}
+        <li>{{#link-to 'question' this.id}}{{question}}{{/link-to}}
+        <font size="1"><em>{{author}}</em></font>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="col-md-6">
+    <p class="lead">Trending Pictures</p>
+    <div class="thumbnail">
+      <img src="http://www.sparkyhub.com/wp-content/uploads/2013/03/31-cute-puppies-that-you-want-to-hug-26.jpg?d3b0cd" alt="puppy">
+      <div class="caption">
+        <h3>Taco</h3>
+      </div>
+    </div>
+    <div class="thumbnail">
+      <img src="http://linzhouweb.com/wp-content/uploads/2015/176494-cute-puppy.jpg" alt="puppy">
+      <div class="caption">
+        <h3>Rocky</h3>
+      </div>
+    </div>
+    <div class="thumbnail">
+      <img src="http://www.cutenessoverflow.com/wp-content/uploads/2014/02/25-This-bulldog-bully-pup-is-chasing-butterflies..jpg" alt="puppy">
+      <div class="caption">
+        <h3>Missy</h3>
+      </div>
+    </div>
+
+  </div>
+</div>
 
   <!-- <p><a href='#' {{action 'sortByTitle'}}>Sort by title</a></p> -->
 
-<p>
+<!-- <p>
   {{#link-to 'new-question' classNames="btn btn-primary"}}Post New Thread{{/link-to}}
-</p>
+</p> -->
