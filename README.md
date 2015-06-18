@@ -12,7 +12,7 @@ GNU General Public License, version 3 (see below). Copyright (c) 2015 Jennifer B
 ### Description
 
 Message Board is a simple app that functions as a forum board. Users can post, edit, and delete questions and post answers to specific questions. 
-The CSS is still in development.
+
 
 ### Author(s)
 
