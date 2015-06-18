@@ -20,17 +20,21 @@
 
   {{else}}
 
-  <p class="lead">{{question}}<font size="1"><em>{{author}}</em></font></p>
-
+<div class="jumbotron">
+  <div class="page-header">
+  <h2>{{question}} <small>{{author}}</small></h2>
+</div>
+  <!-- <h2>{{question}}<font size="3"><em>{{author}}</em></font></h2> -->
   <br>
   <p>{{description}}</p>
 
-  <button class="btn btn-default btn-xs" {{action 'edit'}}>Edit</button>
-  <button class="btn btn-default btn-xs" {{action 'delete'}}>Delete</button>
+  <button class="btn btn-default btn-xs questionbtn" {{action 'edit'}}>Edit</button>
+  <button class="btn btn-default btn-xs questionbtn" {{action 'delete'}}>Delete</button>
+</div>
 
 {{/if}}
 
-<h3>Answers</h3>
+<p class="lead">Answers</p>
   {{#each answers}}
     <p>
       <div class="panel panel-info">
@@ -44,6 +48,6 @@
   {{/each}}
 
 
-<p>{{#link-to 'new-answer' this.id class="btn btn-success answerbtn"}}Post A Response{{/link-to}}</p>
+<p>{{#link-to 'new-answer' this.id class="btn btn-default answerbtn"}}Post A Response{{/link-to}}</p>
 
 {{outlet}}

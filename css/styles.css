@@ -1,5 +1,6 @@
 body {
-  background: #ffeead;
+  background: #dff0e8;
+  line-height: 1x;
 }
 
 .jumbotron {
@@ -15,4 +16,31 @@ body {
   background: #ff6f69;
   color: white;
   border-color: #ff6f69;
+}
+
+.panel-info {
+  border-color: #96ccce;
+}
+
+.panel-info>.panel-heading {
+  color: white;
+  background-color: #96ccce;
+  border-color: #96ccce;
+}
+
+p.lead {
+  color: #666666;
+}
+
+label {
+  color: #666666;
+}
+
+.img-thumbnail {
+  width: 200px;
+}
+
+.questionbtn {
+  float: right;
+  margin: 2px;
 }
